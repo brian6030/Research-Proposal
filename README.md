@@ -8,5 +8,6 @@ Objectives:
 3. Display the AR navigation guidance on the smartphone for users.
 
 AR environment implementation:
+Platform: Android
 Unity Engine
 AR API: ARCore / Vuforia
