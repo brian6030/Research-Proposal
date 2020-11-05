@@ -27,3 +27,14 @@ The camera has nothing to show after the app is built on phone using Universal R
 
 <img src="/Images/screenshot%20(1).png" width=60% height=60%>
 Solution: Add AR Background Render Feature to renderer settings.
+
+
+### Setup of AR Foundation in Unity
+<img src="/Images/screenshot%20(2).png" width=60% height=60%>
+Install package AR Foundation, ARCore XR Plugin (for Android), ARKit XR Plugin (for IOS)
+
+<img src="/Images/settingAn.png" width=60% height=60%>
+Setting of Android Platform
+
+<img src="/Images/settingIOS.png" width=60% height=60%>
+Setting of IOS Platform
