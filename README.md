@@ -10,7 +10,7 @@ Using smartphone to navigate inside a building with a most efficient route
 ## AR environment implementation:
 Unity Engine (Universal Render Pipeline)
 ### Platform: 
-Android / IOS
+Android 7.0 or above / IOS 11.0 or above
 ### AR API: 
 AR Foundation
 - AR Foundation is a Unity package that allows user to develop AR applications in a multi-platform way within Unity. It can develop the AR environment in Unity then build to Android or IOS platform in Unity editor. It provides an interface to connect with different AR API, for instance Google ARCore, ARKit for IOS, and Windows XR Plugin for Microsoft HoloLens. Developers can develop the AR applcation once, then build to multiple platforms.
@@ -28,8 +28,7 @@ The camera has nothing to show after the app is built on phone using Universal R
 <img src="/Images/screenshot%20(1).png" width=60% height=60%>
 Solution: Add AR Background Render Feature to renderer settings.
 
-
-### Setup of AR Foundation in Unity
+### Implementation of AR environment in Unity
 <img src="/Images/screenshot%20(2).png" width=60% height=60%>
 Install package AR Foundation, ARCore XR Plugin (for Android), ARKit XR Plugin (for IOS)
 
@@ -38,3 +37,13 @@ Setting of Android Platform
 
 <img src="/Images/settingIOS.png" width=60% height=60%>
 Setting of IOS Platform
+
+<img src="/Images/screenshot (3).jpg" width=40% height=40%>
+Built the demo project by ARFoundation on my Android phone https://github.com/Unity-Technologies/arfoundation-demos
+
+<img src="/Images/screenshot (4).jpg" width=60% height=60%>
+Created a new project and tried some basic functions of AR Foundation
+
+## Comparison with other existed AR projects
+1. [AR.js - Augmented Reality on the Web](https://github.com/AR-js-org/AR.js)
+2. [DroidAR](https://github.com/bitstars/droidar)
