@@ -40,10 +40,12 @@ Setting of IOS Platform
 
 <img src="/Images/screenshot (3).jpg" width=40% height=40%>
 Built the demo project by ARFoundation on my Android phone https://github.com/Unity-Technologies/arfoundation-demos
+The 3D model will pop up when the AR tracker image is detected
 
 <img src="/Images/screenshot (4).jpg" width=60% height=60%>
-Created a new project and tried some basic functions of AR Foundation
+Created a new project and tried some basic functions of AR Foundation. It will detect the planes then user can tap the screen to place the 3D model on the AR surface
 
 ## Comparison with other existed AR projects
-1. [AR.js - Augmented Reality on the Web](https://github.com/AR-js-org/AR.js)
-2. [DroidAR](https://github.com/bitstars/droidar)
+There are many ways to create an AR application now. I have compared different AR environmentation method to using AR Foundation in Unity Engine. Here are 2 projects I have reseached to analyse their advantages and disadvantages.
+- [Puzzle Knight (My old AR game)](https://youtu.be/CYOTs3uddwE)
+- [DroidAR](https://github.com/bitstars/droidar)
