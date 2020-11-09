@@ -49,3 +49,26 @@ Created a new project and tried some basic functions of AR Foundation. It will d
 There are many ways to create an AR application now. I have compared different AR environmentation method to using AR Foundation in Unity Engine. Here are 2 projects I have reseached to analyse their advantages and disadvantages.
 - [Puzzle Knight (My old AR game)](https://youtu.be/CYOTs3uddwE)
 - [DroidAR](https://github.com/bitstars/droidar)
+
+### Puzzle Knight
+This is my bachelor's degree's final year project. It is an AR puzzle game. The game is based on AR tracker. It has different trackers represent different levels. When the AR camera tracked the tracker, the corresponding level will be shown.
+- Advantages compare to AR Foundation
+  - Faster tracking time 
+    - Since it only need to track the AR tracker
+    - AR Foundation trackerless tracking has to scan the surrounding environment first, therefore, it takes more time to initialize the AR environment
+  - More accurate tracking
+    - Using AR tracker, therefore there are more robust image features to track
+- Disadvantages compare to AR Foundation
+  - No depth occlusion
+  - Higher battery consumption
+ 
+### DroidAR
+This is an AR framework for Android. It can be used to develop both tracker and trackerless AR applications. It supports indoor AR tracking and locationbased Gaming.
+- Advantages compare to AR Foundation
+  - Old version of DroidAR is open source
+- Disadvantages compare to AR Foundation
+  - No depth occlusion, cannot detect depth value.
+  - Since it is a relativly old framework, the graphic quality is not relistic as the current AR API
+    - No light estimation, the 3D model cannot match the physical world's lighting
+    - Tracking is not stable
+  - It is not popular as other AR API. Update is not frequent as Google ARCore or IOS ARkit
