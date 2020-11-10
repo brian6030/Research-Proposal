@@ -52,23 +52,31 @@ There are many ways to create an AR application now. I have compared different A
 
 ### Puzzle Knight
 This is my bachelor's degree's final year project. It is an AR puzzle game. The game is based on AR tracker. It has different trackers represent different levels. When the AR camera tracked the tracker, the corresponding level will be shown.
-- Advantages compare to AR Foundation
+- Advantages over AR Foundation
   - Faster tracking time 
     - Since it only need to track the AR tracker
     - AR Foundation trackerless tracking has to scan the surrounding environment first, therefore, it takes more time to initialize the AR environment
   - More accurate tracking
-    - Using AR tracker, therefore there are more robust image features to track
+    - Using AR tracker, therefore there are more robust image features to track than trackerless tracking
 - Disadvantages compare to AR Foundation
   - No depth occlusion
+	- Depth occlusion can detect objects in physical world that closer to the AR camera than the virtual 3D model. Then occlude the 3D model to create an illusion that the 3D model is blocked by objects in the real world
+  - Lose tracking easily when zoom too close to the tracker
+	- It cannot record the AR coordinate of the 3D models, therefore it can only use tracking
+	- When the camera zoom too close to the tracker, the camera cannot track all the image features, then it will often lose the tracking.
   - Higher battery consumption
+	- Battery drains very fast while playing the game
  
 ### DroidAR
 This is an AR framework for Android. It can be used to develop both tracker and trackerless AR applications. It supports indoor AR tracking and locationbased Gaming.
-- Advantages compare to AR Foundation
-  - Old version of DroidAR is open source
+- Advantages over AR Foundation
+  - Old version of DroidAR is opend source
+	- Despite DroidAR 2 is closed source, the source code of old DroidAR is fully accessible on GitHub. Developers can debug the API easily.
+	- The API can be modified and improved by other developers since it is opened source.
 - Disadvantages compare to AR Foundation
   - No depth occlusion, cannot detect depth value.
-  - Since it is a relativly old framework, the graphic quality is not relistic as the current AR API
+  - Since it is a relativly old framework, the graphic render quality is not relistic as the current AR API
     - No light estimation, the 3D model cannot match the physical world's lighting
     - Tracking is not stable
   - It is not popular as other AR API. Update is not frequent as Google ARCore or IOS ARkit
+    - Difficult to develop new functions in a short period
