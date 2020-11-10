@@ -23,14 +23,17 @@ The app will be developed using Universal Render Pipeline. It is a new render pi
 
 ### Camera become solid color after build using Universal Render Pipeline
 <img src="/Images/52a0c660-765b-4074-91f7-3377c34ebbe4.jpg" width=20% height=20%>
-The camera has nothing to show after the app is built on phone using Universal Render Pipeline.
+The camera has nothing to show after the app is built on phone using Universal Render Pipeline. This problem had bothered me for few day, and I finally found the solution
 
 <img src="/Images/screenshot%20(1).png" width=60% height=60%>
 Solution: Add AR Background Render Feature to renderer settings.
 
 ### Implementation of AR environment in Unity
 <img src="/Images/screenshot%20(2).png" width=60% height=60%>
-Install package AR Foundation, ARCore XR Plugin (for Android), ARKit XR Plugin (for IOS)
+Install packages
+- AR Foundation
+- ARCore XR Plugin (for Android)
+- ARKit XR Plugin (for IOS)
 
 <img src="/Images/settingAn.png" width=60% height=60%>
 Setting of Android Platform
